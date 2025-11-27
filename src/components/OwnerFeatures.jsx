@@ -1,13 +1,9 @@
 import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Autoplay, EffectFade } from 'swiper/modules';
 import { motion } from 'framer-motion';
 import { LayoutDashboard, Calendar, Settings, Clock, BarChart3 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/effect-fade';
+ 
 
 const OwnerFeatures = () => {
   const { t, lang } = useLanguage();
@@ -95,35 +91,15 @@ const OwnerFeatures = () => {
             className="w-full md:w-1/2"
           >
             <div className="relative">
-              {/* Dashboard Preview Swiper */}
+              {/* Dashboard Preview Image */}
               <div className="aspect-[4/3] bg-gray-800 rounded-2xl overflow-hidden shadow-2xl border border-gray-700">
-                <Swiper
-                  modules={[Pagination, Autoplay, EffectFade]}
-                  effect={'fade'}
-                  pagination={{ clickable: true }}
-                  autoplay={{ delay: 3000, disableOnInteraction: false }}
-                  className="h-full w-full"
-                  dir="ltr"
-                >
-                  {/* Add your dashboard images here */}
-                  {/* Replace the placeholder paths with your actual image paths in the array below */}
-                  {/* Place your images in /public/image/ folder and update the paths */}
-                  {[
-                    '/image/1.png', // Replace with your first dashboard image path
-                    '/image/logo.png', // Replace with your second dashboard image path
-                    '/image/3.png'  // Replace with your third dashboard image path
-                  ].map((imagePath, index) => (
-                    <SwiperSlide key={index} className="bg-gray-800 flex items-center justify-center overflow-hidden">
-                      <div className="w-full h-full relative">
-                        <img 
-                          src={imagePath} 
-                          alt={`Dashboard Preview ${index + 1}`}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
+                <div className="w-full h-full relative flex items-center justify-center">
+                  <img
+                    src="/image/logo.png"
+                    alt="Dashboard Preview"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
               
               {/* Decorative elements */}

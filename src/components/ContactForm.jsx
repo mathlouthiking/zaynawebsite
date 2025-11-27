@@ -96,7 +96,8 @@ const ContactForm = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 0.6 }}
-            onSubmit={handleSubmit}
+            action="https://formspree.io/f/xldylnyr"
+            method="POST"
             className="bg-white border-2 border-gray-100 rounded-3xl shadow-xl p-8 md:p-12 space-y-6"
           >
             {/* Name Field */}
@@ -256,4 +257,3 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
-
