@@ -16,11 +16,11 @@ const Footer = () => {
               {t('footer.description')}
             </p>
             <div className={`flex ${isRtl ? 'space-x-reverse' : ''} space-x-4`}>
-              <a href="#" className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-gray-500 hover:bg-accent hover:text-white transition-all shadow-sm">
+              <a href="https://www.instagram.com/zaynasolution?utm_source=qr&igsh=ZmlpbTNhb2hyZXN1" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-gray-500 hover:bg-accent hover:text-white transition-all shadow-sm">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-gray-500 hover:bg-accent hover:text-white transition-all shadow-sm">
-                <Facebook size={20} />
+              <a href="https://www.snapchat.com/@zyna_salon?invite_id=7mvznEOq&locale=ar_SA%40calendar%3Dgregorian&share_id=p-BC8PtESb-OeoPGWcGoBw&sid=b866ffd6c81a4031a26550a44906d702" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-gray-500 hover:bg-accent hover:text-white transition-all shadow-sm">
+                <span className="text-xs font-bold">SC</span>
               </a>
               <a href="#" className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-gray-500 hover:bg-accent hover:text-white transition-all shadow-sm">
                 <Twitter size={20} />
